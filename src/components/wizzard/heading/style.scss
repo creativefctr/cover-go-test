@@ -1,0 +1,26 @@
+.heading{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+    .label{
+        background: #fff;
+        color: #EEEEEE;
+        font-weight: bold;
+        font-size: 39px;
+        z-index: 2;
+        position: relative;
+        width: auto;
+        display: inline-block;
+        padding-right: 0.3em;
+    }
+    &:after{
+        position: absolute;
+        content: '';
+        border-bottom: 1px solid #EEEEEE;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-25%);
+        width: 100%;
+    }
+}

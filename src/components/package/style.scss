@@ -1,0 +1,67 @@
+.package-list{
+    width: 100%;
+    padding: 1em 2em;
+    box-sizing: border-box;
+    .package{
+        font-size: 15px;
+        border-radius: 6px;
+        background: #f5fcfe;
+        border: 1px solid #a5a5a5;
+        padding: 0.5em;
+        margin-bottom: 1em;
+        transition: all 0.1s linear;
+        position: relative;
+        &:hover{
+            background: #dbf6fd;
+        }
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .title{
+            display: flex;
+            flex-direction: column;
+            .badge{
+                font-weight: normal;
+                color: #FF4E00;
+                font-size: 14px;
+            }
+        }
+        .radio{
+            background: #fff;
+            border-radius: 100%;
+            width: 25px;
+            height: 25px;
+            border: 2px solid #CBCBCB;
+            margin-right: 1em;
+            margin-left: 0.5em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &.selected{
+                &:before{
+                    content: '';
+                    width: 21px;
+                    height: 21px;
+                    border-radius: 100%;
+                    background: rgb(4, 126, 41);
+                    display: block;
+                }
+            }
+        }
+        &:after{
+            content: 'More Info';
+            display: block;
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #0C37C2;
+            font-size: 13px;
+            transition: all 0.1s linear;
+            &:hover{
+                transform: translateY(-50%) scale(1.2);
+            }
+        }
+    
+    }
+}
